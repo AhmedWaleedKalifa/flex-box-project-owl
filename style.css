@@ -62,7 +62,7 @@ ul{
     padding:120px 120px 90px;
     color:#E5E7EB;
     background-color:rgb(105, 104, 104);
-    flex:1 0 auto;
+    flex:1 1 auto;
     min-width: 500px;
     font-size: 18px;
 }
@@ -110,6 +110,7 @@ h2{
 .card-container{
     display: flex;
     justify-content: center;
+    flex-wrap:wrap;
     gap:48px;
     font-size: 18px;
     color:#686869;
@@ -193,4 +194,29 @@ h3{
     display:flex;
     justify-content:center;
     align-items: center;
+}
+@media (max-width:1300px){
+    .header, .about, .quote, .contact{
+        display: flex;
+        flex-direction:column;
+    }
+    .call-container{
+        padding: 25px 50px;
+    }
+    h1{
+        font-size: 2.4em;
+    }
+    em{
+        font-size: 1.6em;
+    }
+    .right{
+        display: none;
+    }
+}
+@media (max-width:1200px){
+    .call-container{
+        padding: 25px 50px;
+        gap:0;
+    }
+    
 }
